@@ -1,1 +1,44 @@
-<p>login works!</p>
+<div class="auth-container">
+  <div class="auth-section" id="login-section">
+    <h2>Login</h2>
+    <form>
+      <label for="login-email">E-mail</label>
+      <input type="email" id="login-email" required>
+
+      <label for="login-password">Senha</label>
+      <input type="password" id="login-password" required>
+
+      <button type="submit">Entrar</button>
+      <p><a href="#" id="forgot-password">Esqueceu a senha?</a></p>
+    </form>
+    <p>Não tem uma conta? <a href="#" id="show-register">Cadastre-se</a></p>
+  </div>
+
+  <div class="auth-section" id="register-section" style="display:none;">
+    <h2>Cadastro</h2>
+    <form>
+      <label for="register-email">E-mail</label>
+      <input type="email" id="register-email" required>
+
+      <label for="register-password">Senha</label>
+      <input type="password" id="register-password" required>
+
+      <label for="register-confirm-password">Confirmar Senha</label>
+      <input type="password" id="register-confirm-password" required>
+
+      <button type="submit">Cadastrar</button>
+      <p>Já tem uma conta? <a href="#" id="show-login">Entrar</a></p>
+    </form>
+  </div>
+
+  <div class="auth-section" id="forgot-password-section" style="display:none;">
+    <h2>Recuperar Senha</h2>
+    <form>
+      <label for="forgot-email">E-mail</label>
+      <input type="email" id="forgot-email" required>
+
+      <button type="submit">Enviar Link de Recuperação</button>
+      <p>Já se lembrou da sua senha? <a href="#" id="show-login-from-forgot">Entrar</a></p>
+    </form>
+  </div>
+</div>
