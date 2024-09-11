@@ -1,1 +1,19 @@
-<p>register works!</p>
+<!-- register.component.html -->
+<div class="container">
+  <div class="section" id="register-section">
+    <h2>Cadastro</h2>
+    <form>
+      <label for="register-email">E-mail</label>
+      <input type="email" id="register-email" required>
+
+      <label for="register-password">Senha</label>
+      <input type="password" id="register-password" required>
+
+      <label for="register-confirm-password">Confirmar Senha</label>
+      <input type="password" id="register-confirm-password" required>
+
+      <button type="submit">Cadastrar</button>
+      <p>Já tem uma conta? <a routerLink="/login" id="show-login">Entrar</a></p>
+    </form>
+  </div>
+</div>
